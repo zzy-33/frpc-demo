@@ -1,0 +1,22 @@
+serverAddr = "云服务器IP"
+serverPort = 8050
+auth.token = "随机字符串"
+
+[[proxies]]
+name = "algorithm-ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+# 本机需要映射的端口
+localPort = 22
+# 映射到云服务器的哪个端口
+remotePort = 7701
+
+[[proxies]]
+name = "algorithm-tcp"
+type = "tcp"
+localIP = "127.0.0.1"
+# 本机需要映射的端口
+localPort = 8080
+# 映射到云服务器的哪个端口
+remotePort = 7702
+

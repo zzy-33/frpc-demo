@@ -1,0 +1,16 @@
+[common]
+bind_port = 8050
+authentication_method = token
+token="对应云服务器的Token"
+vhost_http_port = 8051
+
+allow_ports = 7700-7710
+
+dashboard_addr = 0.0.0.0
+dashboard_port = 8052
+dashboard_user = admin
+dashboard_pwd = admin
+
+log_file = ./frps.log
+log_level = info
+log_max_days = 3
